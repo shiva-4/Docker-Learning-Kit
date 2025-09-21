@@ -1,0 +1,5 @@
+services:
+  sut:
+    build: ../hello-docker
+    command: ["python", "-m", "unittest", "-v"]
+    profiles: ["test"]
